@@ -8,8 +8,8 @@ $positions = array_fill_keys( $matches[1], 0 );
 $dirs = array_fill_keys( $matches[1], 1 );
 $severity = 0;
 $max_steps = max( $matches[1] );
-for ( $j = 0; $j <= $max_steps; $j++) {
-	for ( $i = 0; $i <= $max_steps; $i++) {
+for ( $j = 0; $j <= $max_steps; $j++ ) {
+	for ( $i = 0; $i <= $max_steps; $i++ ) {
 		if ( isset( $states[$i] ) ) {
 			if ( isset( $positions[$j] ) ) {
 				if ( $i == 0 && $positions[$j] == 0 ) $severity += $j * $states[$j];
